@@ -45,6 +45,15 @@ Millieee
   <!-- Luis Miguel: de quererte asi -->
   <iframe width="560" height="315" src="https://youtu.be/0wSn5ccP09s?feature=shared" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </body>
+  <video autoplay loop playsinline muted style="display: none;" id="musica">
+  <source src="https://raw.githubusercontent.com/MRrodri7/MR/main/Lm.mp4" type="video/mp4">
+  
+</video>
+
+<!-- Botón para activar sonido -->
+<button onclick="document.getElementById('musica').muted = false;" style="position: fixed; bottom: 20px; left: 20px; z-index: 999;">
+  🔊 Activar sonido
+</button>
 </html>
 <audio controls autoplay loop>
   <source src="https://docs.google.com/uc?export=download&id=1GawnjNTMfF3FO_FVnAnC4VhVvyNMtDpV" type="audio/mpeg">
