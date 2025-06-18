@@ -41,7 +41,38 @@ Millieee
   <p> Te amo con todo mi ser, con todo mi corazon, gracias por ser mi novia, mi niña, mi princesa, mi esposa mi todo y he creado esta pagina web solo para ti pq te amo muchsisisisimo💞💗💗💞 </p>
   <img src="https://i.imgur.com/pRq0I6f.jpeg" alt="La luna el dia que te pedi que fueras mi novia, es hermosa pero tu le ganas mi amor">
   <p> Esta es la luna el dia que te pedi ser mi novia, es hermosa no? bueno tu eres mas hermosa que la luna y que todo 💞💗 Contigo todo es mejor, mi amor. eres el motivo de todo lo que hago lo demas no me importa sabes solo tu me importas, si te llegara a pasar algo me muero es q te amo tantooooo ya te dije que te amo? ummmm creo que no asi que te amo te amo te amooooooooooo.</p>
+<div style="max-width: 400px; margin: 30px auto; font-family: Arial, sans-serif; text-align: center; background: #ffe6f0; padding: 20px; border-radius: 15px; box-shadow: 0 0 10px #d6336c;">
+  <h2 style="color: #d6336c;">¿Cuánto me amas? 💖</h2>
+  <form id="votoForm">
+    <label>
+      <input type="radio" name="amor" value="Yo más" required />
+      Yo más
+    </label><br><br>
+    <label>
+      <input type="radio" name="amor" value="Más yo" />
+      Más yo
+    </label><br><br>
+    <label>
+      <input type="radio" name="amor" value="Yo muchísimo más" />
+      Yo muchísimo más
+    </label><br><br>
+    <button type="submit" style="background: #d6336c; color: white; border: none; padding: 10px 25px; border-radius: 10px; font-weight: bold; cursor: pointer;">
+      Enviar mi amor 💌
+    </button>
+  </form>
+  <p id="mensaje" style="margin-top: 20px; font-size: 1.1em; color: #d6336c; font-weight: bold;"></p>
+</div>
 
+<script>
+  document.getElementById('votoForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const elegido = form.amor.value;
+    const mensaje = document.getElementById('mensaje');
+    mensaje.textContent = 'Yo te amooooo muchsiisismo más 💞💗💞🗣️‼️ 😹😹😹';
+    form.style.display = 'none'; // Oculta el formulario después de votar
+  });
+</script>
   <!-- Luis Miguel: de quererte asi -->
 </body>
   <video autoplay loop playsinline muted style="display: none;" id="musica">
